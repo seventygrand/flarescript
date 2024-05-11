@@ -68,7 +68,7 @@
 
   <div class="container">
     <h1>flarescript</h1>
-    <p>enter a code to unlock!:</p>
+    <p>enter a code to unlock! (all scripts on this site are safe.):</p>
 
     <div class="redirect-form">
       <input type="text" id="codeInput" placeholder="Enter code">
@@ -83,19 +83,18 @@
   <script>
     function checkCode() {
       var code = document.getElementById('codeInput').value;
-      // Check if code is correct and redirect accordingly
       switch(code) {
-        case 'code1':
-          window.location.href = 'https://www.example1.com';
+        case 'seventygrand':
+          window.location.href = 'https://www.seventygrand.netlify.app';
           break;
-        case 'code2':
-          window.location.href = 'https://www.example2.com';
+        case 'nyan cat':
+          window.location.href = '/scripts/nyan-cat/index.html';
           break;
-        case 'code3':
-          window.location.href = 'https://www.example3.com';
+        case 'snowman':
+          window.location.href = 'scripts/mewing/mewing.html';
           break;
         default:
-          alert('Invalid code');
+          alert('invalid code');
       }
     }
   </script>
