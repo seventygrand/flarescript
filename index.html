@@ -67,49 +67,76 @@
       color: #999;
       margin-top: 20px;
     }
+    .code-list-container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    li {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>welcome to flarescript</h1>
-    <p>enter a code below to access the content:</p>
-
+    <h1>weclome to flarescript!</h1>
+    <p>enter any code to unlock it!</p>
     <div class="redirect-form">
-      <input type="text" id="codeInput" placeholder="Enter code">
+      <input type="text" id="codeInput" placeholder="enter code">
       <button onclick="checkCode()">submit</button>
     </div>
 
+    <div class="code-list-container">
+      <h2>available codes:</h2>
+      <ul>
+        <li>resent: sends to eaglercraft resent</li>
+        <li>nyan cat: sends to the nyan cat meme</li>
+        <li>snowman: sends to a snowman mewing</li> 
+        <li>seventygrand: sends to my website</li>
+        <li>2048: sends to the famous game 2048</li>
+      </ul>
+    </div>
+
     <div class="footer">
-      made with love by seventygrand ❤️
+      made with ❤️ by seventygrand
     </div>
 
 
-
-  <script>
-    function checkCode() {
-      var code = document.getElementById('codeInput').value;
-      switch(code) {
-        case 'seventygrand':
-          window.location.href = '/scripts/seventygrand/index.html';
-          break;
-        case 'nyan cat':
-          window.location.href = '/scripts/nyan-cat/index.html';
-          break;
-        case 'snowman':
-          window.location.href = 'scripts/mewing/mewing.html';
-          break;
-          case 'minecraft':
-          window.location.href = 'scripts/eaglercraft/resentclient.html';
-          break;
-          case '2048':
-          window.location.href = 'scripts/2048/index.html';
-          break;
-        default:
-          alert('invalid code');
-      }
-    }
-  </script>
+    <script>
+        function checkCode() {
+          var code = document.getElementById('codeInput').value;
+          switch(code) {
+            case 'seventygrand':
+              window.location.href = '/scripts/seventygrand/index.html';
+              break;
+            case 'nyan cat':
+              window.location.href = '/scripts/nyan-cat/index.html';
+              break;
+            case 'snowman':
+              window.location.href = 'scripts/mewing/mewing.html';
+              break;
+              case 'resent':
+              window.location.href = 'scripts/eaglercraft/resentclient.html';
+              break;
+              case '2048':
+              window.location.href = 'scripts/2048/index.html';
+              break;
+            default:
+              alert('invalid code');
+          }
+        }
+      </script>
+    
 
 </body>
 </html>
