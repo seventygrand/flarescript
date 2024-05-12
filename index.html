@@ -99,11 +99,12 @@
     <div class="code-list-container">
       <h2>available codes:</h2>
       <ul>
-        <li>resent: sends to eaglercraft resent</li>
+        <li>resent: sends to resent version of eaglercraft</li>
         <li>nyan cat: sends to the nyan cat meme</li>
         <li>snowman: sends to a snowman mewing</li> 
         <li>seventygrand: sends to my website</li>
         <li>2048: sends to the famous game 2048</li>
+        <li>eaglercraft: sends to regular eaglercraft</li>
       </ul>
     </div>
 
@@ -130,6 +131,9 @@
               break;
               case '2048':
               window.location.href = 'scripts/2048/index.html';
+              break;
+              case 'eaglercraft':
+              window.location.href = 'scripts/eaglercraft/eaglercraft.html';
               break;
             default:
               alert('invalid code');
